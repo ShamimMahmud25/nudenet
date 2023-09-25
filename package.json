@@ -4,7 +4,7 @@
   "description": "NudeNet: NSFW Object Detection for TFJS and NodeJS",
   "main": "nudenet.js",
   "scripts": {
-    "start": "node src/nudenet.js -i samples/mrdl.jpeg -o samples/nude-out-default.jpg",
+    "start": "node src/nudenet.js -i samples/test.jpg -o samples/nude-out-default.jpg",
     "dev": "build --profile development",
     "lint": "eslint src/*"
   },
