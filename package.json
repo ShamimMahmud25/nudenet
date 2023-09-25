@@ -4,7 +4,7 @@
   "description": "NudeNet: NSFW Object Detection for TFJS and NodeJS",
   "main": "nudenet.js",
   "scripts": {
-    "start": "node src/nudenet.js -i samples/mrdl.jpg -o samples/nude-out-default.jpg",
+    "start": "node src/nudenet.js -i samples/mrdl.jpeg -o samples/nude-out-default.jpg",
     "dev": "build --profile development",
     "lint": "eslint src/*"
   },
@@ -24,8 +24,10 @@
   "dependencies": {
     "@tensorflow/tfjs": "^4.5.0",
     "@tensorflow/tfjs-node": "^4.5.0",
+    "@tensorflow/tfjs-node-gpu": "^4.11.0",
     "@vladmandic/pilogger": "^0.4.8",
-    "argparse": "^2.0.1"
+    "argparse": "^2.0.1",
+    "ffmpeg": "^0.0.4"
   },
   "devDependencies": {
     "@html-eslint/eslint-plugin": "^0.18.0",
@@ -44,6 +46,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
     "long": "^5.2.3",
-    "pipe2jpeg": "^0.4.1"
+    "pipe2jpeg": "^0.5.0"
   }
 }
